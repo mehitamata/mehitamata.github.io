@@ -10,6 +10,7 @@ html, body {
 	font-family: 'Days One', sans-serif;
 	font-size: 14px;
 	background-color: #ffffff;
+	overflow: hidden;
 }
 
 /** Headers **/
@@ -27,6 +28,7 @@ h2 { font-size: 1.25em; }
 	position: absolute;
 	transform: translateX(-50%) translateY(-50%) skew(-9deg);
 	height: 200%;
+	overflow: hidden;
 }
 #overlay1 { width: 620px; }
 #overlay2 { width: 200px; right: -300px; }
