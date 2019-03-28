@@ -1,44 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Days+One');
 
-/**
- * ColorScheme:
- * 
- * Dark Gray / Pantone 419: #282821
- * Light Gray / Pantone 537: #C4C6CE
- * Prominent color 1 - Red / Pantone 1785: #FC4F59
- * Prominent color 2 - Yelow / Pantone 122 #FCD856
- * Prominent color 3 - Blue / Pantone 313: #0099B5
- **/
+/** Updated color scheme: https://coolors.co/ffef00-541388-f00699-f75c03-39ff14 **/
 
 /** General **/
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Days One', sans-serif;
+	font-size: 14px;
+	background-color: #ffffff;
 }
 
 /** Headers **/
-h1, h3{
-    font-family: 'Righteous', cursive;
-    color: rgba(0,153,181,1);
-    Position: absolute;
-    z-index: 9999;
+h1, h2, h3{
+	color: #fff;
+	z-index: 9999;
+	margin: 0;
+}
+h1 { font-size: 3em; }
+h2 { font-size: 1.25em; }
+
+/** Overlays **/
+.overlay {
+	background-color: #F00699;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%) skew(-9deg);
+	height: 200%;
+}
+#overlay1 { width: 620px; }
+#overlay2 { width: 200px; right: -300px; }
+
+/** Info box location **/
+#info {
+	Position: absolute;
+	top : 1em;
+	left : 1em;
+	z-index: 9999;
 }
 
-/** Desktop view **/
-@media screen and (min-width: 481px) {
-    h1 {
-        font-size: 3em;
-        top : 1em;
-        left : 2em;
-    }
-}
-
-/** Mobile view **/
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2em;
-        top : 0em;
-        left : 1em;
-    }
+/** Map **/
+#map {
+	height: 100%;
+	z-index: 25;
+	mix-blend-mode: multiply;
 }
